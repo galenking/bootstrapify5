@@ -3,12 +3,13 @@
     "name": "theme_info",
     "theme_name": "Debut",
     "theme_author": "Shopify",
-    "theme_version": "16.7.1",
+    "theme_version": "17.3.0",
     "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/using-themes\/themes-by-shopify\/debut",
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": {
+      "cs": "Barvy",
       "da": "Farver",
       "de": "Farben",
       "en": "Colors",
@@ -21,10 +22,13 @@
       "ko": "색상",
       "nb": "Farger",
       "nl": "Kleuren",
+      "pl": "Kolory",
       "pt-BR": "Cores",
       "pt-PT": "Cores",
       "sv": "Färger",
       "th": "สี",
+      "tr": "Renkler",
+      "vi": "Màu",
       "zh-CN": "颜色",
       "zh-TW": "色彩"
     },
@@ -32,6 +36,7 @@
       {
         "type": "header",
         "content": {
+          "cs": "Text",
           "da": "Tekst",
           "de": "Text",
           "en": "Text",
@@ -44,10 +49,13 @@
           "ko": "텍스트",
           "nb": "Tekst",
           "nl": "Tekst",
+          "pl": "Tekst",
           "pt-BR": "Texto",
           "pt-PT": "Texto",
           "sv": "Text",
           "th": "ข้อความ",
+          "tr": "Metin",
+          "vi": "Văn bản",
           "zh-CN": "文本",
           "zh-TW": "文字"
         }
@@ -56,6 +64,7 @@
         "type": "color",
         "id": "color_text",
         "label": {
+          "cs": "Nadpisy a odkazy",
           "da": "Overskrifter og links",
           "de": "Titel und Links",
           "en": "Headings and links",
@@ -68,10 +77,13 @@
           "ko": "제목 및 링크",
           "nb": "Overskrifter og koblinger",
           "nl": "Koppen en links",
+          "pl": "Nagłówki i linki",
           "pt-BR": "Títulos e links",
           "pt-PT": "Títulos e ligações",
           "sv": "Rubriker och länkar",
           "th": "หัวเรื่องและลิงก์",
+          "tr": "Başlıklar ve bağlantılar",
+          "vi": "Tiêu đề và liên kết",
           "zh-CN": "标题和链接",
           "zh-TW": "標題和連結"
         },
@@ -81,6 +93,7 @@
         "type": "color",
         "id": "color_body_text",
         "label": {
+          "cs": "Základní text",
           "da": "Brødtekst",
           "de": "Body-Text",
           "en": "Body text",
@@ -93,10 +106,13 @@
           "ko": "본문 텍스트",
           "nb": "Brødtekst",
           "nl": "Hoofdtekst",
+          "pl": "Tekst podstawowy",
           "pt-BR": "Corpo do texto",
           "pt-PT": "Corpo de texto",
           "sv": "Brödtext",
           "th": "ข้อความเนื้อหา",
+          "tr": "Gövde metni",
+          "vi": "Văn bản nội dung",
           "zh-CN": "正文文本",
           "zh-TW": "內文"
         },
@@ -106,6 +122,7 @@
         "type": "color",
         "id": "color_sale_text",
         "label": {
+          "cs": "Prodejní cena",
           "da": "Udsalgspris",
           "de": "Verkaufspreis",
           "en": "Sale price",
@@ -118,10 +135,13 @@
           "ko": "판매 가격",
           "nb": "Salgspris",
           "nl": "Aanbiedingsprijs",
+          "pl": "Cena sprzedaży",
           "pt-BR": "Preço de venda",
           "pt-PT": "Preço de saldo",
           "sv": "Försäljningspris",
           "th": "ราคาขาย",
+          "tr": "Satış fiyatı",
+          "vi": "Giá bán",
           "zh-CN": "销售价格",
           "zh-TW": "售價"
         },
@@ -130,6 +150,7 @@
       {
         "type": "header",
         "content": {
+          "cs": "Tlačítka",
           "da": "Knapper",
           "de": "Buttons",
           "en": "Buttons",
@@ -142,10 +163,13 @@
           "ko": "버튼",
           "nb": "Knapper",
           "nl": "Knoppen",
+          "pl": "Przyciski",
           "pt-BR": "Botões",
           "pt-PT": "Botões",
           "sv": "Knappar",
           "th": "ปุ่ม",
+          "tr": "Düğmeler",
+          "vi": "Nút",
           "zh-CN": "按钮",
           "zh-TW": "按鈕"
         }
@@ -154,6 +178,7 @@
         "type": "color",
         "id": "color_button",
         "label": {
+          "cs": "Primární tlačítka",
           "da": "Primære knapper",
           "de": "Primäre Buttons",
           "en": "Primary buttons",
@@ -166,10 +191,13 @@
           "ko": "기본 버튼",
           "nb": "Primærknapper",
           "nl": "Primaire knoppen",
+          "pl": "Przyciski główne",
           "pt-BR": "Botões primários",
           "pt-PT": "Botões principais",
           "sv": "Primära knappar",
           "th": "ปุ่มหลัก",
+          "tr": "Birincil düğmeler",
+          "vi": "Nút chính",
           "zh-CN": "主要按钮",
           "zh-TW": "主要按鈕"
         },
@@ -179,6 +207,7 @@
         "type": "color",
         "id": "color_button_text",
         "label": {
+          "cs": "Primární popisky",
           "da": "Primære labels",
           "de": "Primäre Beschriftung",
           "en": "Primary labels",
@@ -191,10 +220,13 @@
           "ko": "기본 레이블",
           "nb": "Primære etiketter",
           "nl": "Primaire labels",
+          "pl": "Etykiety główne",
           "pt-BR": "Rótulos primários",
           "pt-PT": "Etiquetas principais",
           "sv": "Primär etiketter",
           "th": "ป้ายกำกับหลัก",
+          "tr": "Birincil etiketler",
+          "vi": "Nhãn chính",
           "zh-CN": "主要标签",
           "zh-TW": "主要標籤"
         },
@@ -204,6 +236,7 @@
         "type": "color",
         "id": "color_small_button_text_border",
         "label": {
+          "cs": "Sekundární popisky a ohraničení",
           "da": "Sekundære labels og kanter",
           "de": "Sekundäre Labels und Ränder",
           "en": "Secondary labels and borders",
@@ -216,10 +249,13 @@
           "ko": "보조 레이블 및 테두리",
           "nb": "Sekundære etiketter og rammer",
           "nl": "Secundaire labels en randen",
+          "pl": "Etykiety dodatkowe i obramowania",
           "pt-BR": "Rótulos e bordas secundárias",
           "pt-PT": "Limites e etiquetas secundárias",
           "sv": "Sekundära etiketter och gränser",
           "th": "ป้ายกำกับรองและขอบ",
+          "tr": "İkincil etiketler ve kenarlıklar",
+          "vi": "Nhãn và đường viền phụ",
           "zh-CN": "次要标签和边框",
           "zh-TW": "次要標籤和邊框"
         },
@@ -228,6 +264,7 @@
       {
         "type": "header",
         "content": {
+          "cs": "Pole formuláře",
           "da": "Formularfelter",
           "de": "Formularfelder",
           "en": "Form fields",
@@ -240,10 +277,13 @@
           "ko": "양식 필드",
           "nb": "Skjemafelt",
           "nl": "Formuliervelden",
+          "pl": "Pola formularza",
           "pt-BR": "Campos de formulário",
           "pt-PT": "Campos de formulário",
           "sv": "Formulärfält",
           "th": "ช่องข้อมูลของแบบฟอร์ม",
+          "tr": "Form alanları",
+          "vi": "Trường biểu mẫu",
           "zh-CN": "表单字段",
           "zh-TW": "表單欄位"
         }
@@ -252,6 +292,7 @@
         "type": "color",
         "id": "color_text_field_text",
         "label": {
+          "cs": "Text",
           "da": "Tekst",
           "de": "Text",
           "en": "Text",
@@ -264,10 +305,13 @@
           "ko": "텍스트",
           "nb": "Tekst",
           "nl": "Tekst",
+          "pl": "Tekst",
           "pt-BR": "Texto",
           "pt-PT": "Texto",
           "sv": "Text",
           "th": "ข้อความ",
+          "tr": "Metin",
+          "vi": "Văn bản",
           "zh-CN": "文本",
           "zh-TW": "文字"
         },
@@ -277,6 +321,7 @@
         "type": "color",
         "id": "color_text_field_border",
         "label": {
+          "cs": "Ohraničení",
           "da": "Kanter",
           "de": "Ränder",
           "en": "Borders",
@@ -289,10 +334,13 @@
           "ko": "테두리",
           "nb": "Rammer",
           "nl": "Grenzen",
+          "pl": "Obramowania",
           "pt-BR": "Bordas",
           "pt-PT": "Limites",
           "sv": "Gränser",
           "th": "ขอบ",
+          "tr": "Kenarlıklar",
+          "vi": "Đường viền",
           "zh-CN": "边框",
           "zh-TW": "邊框"
         },
@@ -302,6 +350,7 @@
         "type": "color",
         "id": "color_text_field",
         "label": {
+          "cs": "Pozadí",
           "da": "Baggrund",
           "de": "Hintergrund",
           "en": "Background",
@@ -314,10 +363,13 @@
           "ko": "배경",
           "nb": "Bakgrunn",
           "nl": "Achtergrond",
+          "pl": "Tło",
           "pt-BR": "Plano de fundo",
           "pt-PT": "Fundo",
           "sv": "Bakgrund",
           "th": "พื้นหลัง",
+          "tr": "Arka plan",
+          "vi": "Nền",
           "zh-CN": "背景",
           "zh-TW": "背景"
         },
@@ -326,6 +378,7 @@
       {
         "type": "header",
         "content": {
+          "cs": "Překryvy obrázku",
           "da": "Overlejring af billeder",
           "de": "Text auf Fotos",
           "en": "Image overlays",
@@ -338,10 +391,13 @@
           "ko": "이미지 오버레이",
           "nb": "Bildeoverlegg",
           "nl": "Beeld-overlays",
+          "pl": "Nakładki obrazu",
           "pt-BR": "Sobreposições de imagens",
           "pt-PT": "Sobreposições de imagens",
           "sv": "Bildöverlagring",
           "th": "การวางซ้อนรูปภาพ",
+          "tr": "Görsel yer paylaşımları",
+          "vi": "Lớp phủ hình ảnh",
           "zh-CN": "图片叠加",
           "zh-TW": "圖片疊加層"
         }
@@ -350,6 +406,7 @@
         "type": "color",
         "id": "color_image_overlay_text",
         "label": {
+          "cs": "Text",
           "da": "Tekst",
           "de": "Text",
           "en": "Text",
@@ -362,10 +419,13 @@
           "ko": "텍스트",
           "nb": "Tekst",
           "nl": "Tekst",
+          "pl": "Tekst",
           "pt-BR": "Texto",
           "pt-PT": "Texto",
           "sv": "Text",
           "th": "ข้อความ",
+          "tr": "Metin",
+          "vi": "Văn bản",
           "zh-CN": "文本",
           "zh-TW": "文字"
         },
@@ -375,6 +435,7 @@
         "type": "color",
         "id": "color_image_overlay",
         "label": {
+          "cs": "Pozadí",
           "da": "Baggrund",
           "de": "Hintergrund",
           "en": "Background",
@@ -387,10 +448,13 @@
           "ko": "배경",
           "nb": "Bakgrunn",
           "nl": "Achtergrond",
+          "pl": "Tło",
           "pt-BR": "Plano de fundo",
           "pt-PT": "Fundo",
           "sv": "Bakgrund",
           "th": "พื้นหลัง",
+          "tr": "Arka plan",
+          "vi": "Nền",
           "zh-CN": "背景",
           "zh-TW": "背景"
         },
@@ -400,6 +464,7 @@
         "type": "range",
         "id": "image_overlay_opacity",
         "label": {
+          "cs": "Neprůhlednost",
           "da": "Uigennemsigtighed",
           "de": "Opazität",
           "en": "Opacity",
@@ -412,10 +477,13 @@
           "ko": "불투명도",
           "nb": "Gjennomsiktighet",
           "nl": "Doorschijnendheid",
+          "pl": "Nieprzezroczystość",
           "pt-BR": "Opacidade",
           "pt-PT": "Opacidade",
           "sv": "Opacitet",
           "th": "ความทึบ",
+          "tr": "Opaklık",
+          "vi": "Độ chắn sáng",
           "zh-CN": "不透明度",
           "zh-TW": "透明度"
         },
@@ -423,6 +491,7 @@
         "max": 100,
         "step": 1,
         "unit": {
+          "cs": "%",
           "da": "%",
           "de": "%",
           "en": "%",
@@ -435,10 +504,13 @@
           "ko": "%",
           "nb": "%",
           "nl": "%",
+          "pl": "%",
           "pt-BR": "%",
           "pt-PT": "%",
           "sv": "%",
           "th": "%",
+          "tr": "%",
+          "vi": "%",
           "zh-CN": "%",
           "zh-TW": "%"
         },
@@ -447,6 +519,7 @@
       {
         "type": "header",
         "content": {
+          "cs": "Stránka",
           "da": "Side",
           "de": "Seite",
           "en": "Page",
@@ -459,10 +532,13 @@
           "ko": "페이지",
           "nb": "Side",
           "nl": "Pagina",
+          "pl": "Strona",
           "pt-BR": "Página",
           "pt-PT": "Página",
           "sv": "Sida",
           "th": "หน้า",
+          "tr": "Sayfa",
+          "vi": "Trang",
           "zh-CN": "页面",
           "zh-TW": "頁面"
         }
@@ -471,6 +547,7 @@
         "type": "color",
         "id": "color_borders",
         "label": {
+          "cs": "Ohraničení a čáry",
           "da": "Kanter og beskæringer",
           "de": "Rahmen und Linien",
           "en": "Borders and lines",
@@ -483,10 +560,13 @@
           "ko": "테두리 및 라인",
           "nb": "Border og linjer",
           "nl": "Randen en lijnen",
+          "pl": "Obramowania i linie",
           "pt-BR": "Bordas e linhas",
           "pt-PT": "Limites e linhas",
           "sv": "Gränser och linjer",
           "th": "เส้นขอบและบรรทัด",
+          "tr": "Kenarlıklar ve çizgiler",
+          "vi": "Đường viền và đường kẻ",
           "zh-CN": "边框和线条",
           "zh-TW": "邊框和線條"
         },
@@ -496,6 +576,7 @@
         "type": "color",
         "id": "color_body_bg",
         "label": {
+          "cs": "Pozadí",
           "da": "Baggrund",
           "de": "Hintergrund",
           "en": "Background",
@@ -508,10 +589,13 @@
           "ko": "배경",
           "nb": "Bakgrunn",
           "nl": "Achtergrond",
+          "pl": "Tło",
           "pt-BR": "Plano de fundo",
           "pt-PT": "Fundo",
           "sv": "Bakgrund",
           "th": "พื้นหลัง",
+          "tr": "Arka plan",
+          "vi": "Nền",
           "zh-CN": "背景",
           "zh-TW": "背景"
         },
@@ -521,6 +605,7 @@
   },
   {
     "name": {
+      "cs": "Typografie",
       "da": "Typografi",
       "de": "Typographie",
       "en": "Typography",
@@ -533,10 +618,13 @@
       "ko": "입력 체계",
       "nb": "Typografi",
       "nl": "Typografie",
+      "pl": "Typografia",
       "pt-BR": "Tipografia",
       "pt-PT": "Tipografia",
       "sv": "Typografi",
       "th": "ตัวพิมพ์",
+      "tr": "Tipografi",
+      "vi": "Kiểu chữ",
       "zh-CN": "版式",
       "zh-TW": "印刷樣式"
     },
@@ -544,6 +632,7 @@
       {
         "type": "header",
         "content": {
+          "cs": "Nadpisy a tlačítka",
           "da": "Overskrifter og knapper",
           "de": "Titel und Buttons",
           "en": "Headings and buttons",
@@ -556,10 +645,13 @@
           "ko": "제목 및 버튼",
           "nb": "Overskrifter og knapper",
           "nl": "Koppen en knoppen",
+          "pl": "Nagłówki i przyciski",
           "pt-BR": "Títulos e botões",
           "pt-PT": "Títulos e botões",
           "sv": "Rubriker och knappar",
           "th": "หัวเรื่องและปุ่ม",
+          "tr": "Başlıklar ve düğmeler",
+          "vi": "Tiêu đề và nút",
           "zh-CN": "标题和按钮",
           "zh-TW": "標題和按鈕"
         }
@@ -568,6 +660,7 @@
         "type": "font_picker",
         "id": "type_header_font",
         "label": {
+          "cs": "Písmo",
           "da": "Skrifttype",
           "de": "Schriftart",
           "en": "Font",
@@ -580,10 +673,13 @@
           "ko": "글꼴",
           "nb": "Skrifttype",
           "nl": "Lettertype",
+          "pl": "Czcionka",
           "pt-BR": "Fonte",
           "pt-PT": "Tipo de letra",
           "sv": "Typsnitt",
           "th": "แบบอักษร",
+          "tr": "Yazı tipi",
+          "vi": "Phông chữ",
           "zh-CN": "字体",
           "zh-TW": "字型"
         },
@@ -593,6 +689,7 @@
         "type": "range",
         "id": "type_header_base_size",
         "label": {
+          "cs": "Základní velikost nadpisu",
           "da": "Basisstørrelse for overskrift",
           "de": "Titelgröße",
           "en": "Heading base size",
@@ -605,10 +702,13 @@
           "ko": "제목 기본 크기",
           "nb": "Grunnstørrelse for overskrift",
           "nl": "Afmeting kopbasis",
+          "pl": "Podstawowy rozmiar nagłówka",
           "pt-BR": "Tamanho básico do título",
           "pt-PT": "Tamanho básico do título",
           "sv": "Rubrik basstorlek",
           "th": "ขนาดพื้นฐานของหัวเรื่อง",
+          "tr": "Başlık temel boyutu",
+          "vi": "Cỡ cơ sở của tiêu đề",
           "zh-CN": "标题基本尺寸",
           "zh-TW": "標題基本尺寸"
         },
@@ -621,6 +721,7 @@
       {
         "type": "header",
         "content": {
+          "cs": "Základní text",
           "da": "Brødtekst",
           "de": "Body-Text",
           "en": "Body text",
@@ -633,10 +734,13 @@
           "ko": "본문 텍스트",
           "nb": "Brødtekst",
           "nl": "Hoofdtekst",
+          "pl": "Tekst podstawowy",
           "pt-BR": "Corpo do texto",
           "pt-PT": "Corpo de texto",
           "sv": "Brödtext",
           "th": "ข้อความเนื้อหา",
+          "tr": "Gövde metni",
+          "vi": "Văn bản nội dung",
           "zh-CN": "正文文本",
           "zh-TW": "內文"
         }
@@ -645,6 +749,7 @@
         "type": "font_picker",
         "id": "type_base_font",
         "label": {
+          "cs": "Písmo",
           "da": "Skrifttype",
           "de": "Schriftart",
           "en": "Font",
@@ -657,10 +762,13 @@
           "ko": "글꼴",
           "nb": "Skrifttype",
           "nl": "Lettertype",
+          "pl": "Czcionka",
           "pt-BR": "Fonte",
           "pt-PT": "Tipo de letra",
           "sv": "Typsnitt",
           "th": "แบบอักษร",
+          "tr": "Yazı tipi",
+          "vi": "Phông chữ",
           "zh-CN": "字体",
           "zh-TW": "字型"
         },
@@ -670,6 +778,7 @@
         "type": "range",
         "id": "type_base_size",
         "label": {
+          "cs": "Základní velikost",
           "da": "Basisstørrelse",
           "de": "Größe",
           "en": "Base size",
@@ -682,10 +791,13 @@
           "ko": "기본 사이즈",
           "nb": "Grunnstørrelse",
           "nl": "Basisafmeting",
+          "pl": "Rozmiar podstawowy",
           "pt-BR": "Tamanho básico",
           "pt-PT": "Tamanho básico",
           "sv": "Basstorlek",
           "th": "ขนาดพื้นฐาน",
+          "tr": "Temel boyutu",
+          "vi": "Cỡ cơ sở",
           "zh-CN": "基本尺寸",
           "zh-TW": "基本尺寸"
         },
@@ -727,6 +839,7 @@
   },
   {
     "name": {
+      "cs": "Sociální sítě",
       "da": "Sociale medier",
       "de": "Social Media",
       "en": "Social media",
@@ -739,10 +852,13 @@
       "ko": "소셜 미디어",
       "nb": "Sosiale medier",
       "nl": "Social media",
+      "pl": "Media społecznościowe",
       "pt-BR": "Redes sociais",
       "pt-PT": "Redes sociais",
       "sv": "Sociala medier",
       "th": "โซเชียลมีเดีย",
+      "tr": "Sosyal medya",
+      "vi": "Truyền thông xã hội",
       "zh-CN": "社交媒体",
       "zh-TW": "社交媒體"
     },
@@ -750,73 +866,7 @@
       {
         "type": "header",
         "content": {
-          "da": "Billede til deling på sociale medier",
-          "de": "Social-Media-Button",
-          "en": "Social sharing image",
-          "es": "Imagen de redes sociales",
-          "fi": "Some-jakamiskuva",
-          "fr": "Image de partage social",
-          "hi": "सोशल शेयरिंग इमेज",
-          "it": "Immagine per condivisione social",
-          "ja": "SNSでシェアする画像",
-          "ko": "소셜 공유 이미지",
-          "nb": "Bilde for deling på sosiale medier",
-          "nl": "Afbeelding voor delen via social media.",
-          "pt-BR": "Imagem de compartilhamento em redes sociais",
-          "pt-PT": "Imagem de partilha nas redes sociais",
-          "sv": "Bild för social delning",
-          "th": "รูปภาพสำหรับแชร์ลงโซเชียล",
-          "zh-CN": "社交分享图片",
-          "zh-TW": "社群分享圖示"
-        }
-      },
-      {
-        "type": "image_picker",
-        "id": "share_image",
-        "label": {
-          "da": "Billede",
-          "de": "Foto",
-          "en": "Image",
-          "es": "Imagen",
-          "fi": "Kuva",
-          "fr": "Image",
-          "hi": "इमेज",
-          "it": "Immagine",
-          "ja": "画像",
-          "ko": "이미지",
-          "nb": "Bilde",
-          "nl": "Afbeelding",
-          "pt-BR": "Imagem",
-          "pt-PT": "Imagem",
-          "sv": "Bild",
-          "th": "รูปภาพ",
-          "zh-CN": "图片",
-          "zh-TW": "圖片"
-        },
-        "info": {
-          "da": "Vis ved deling af link på sociale medier. [Få mere at vide](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) om miniaturebilleder.",
-          "de": "Wird angezeigt, wenn ein Link in den sozialen Medien geteilt wird. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) über Bild-Miniaturansichten.",
-          "en": "Shown when sharing a link on social media. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) about image thumbnails.",
-          "es": "Aparece cuando se comparte un enlace en una red social. [Más información sobre las miniaturas](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/).",
-          "fi": "Näkyy, kun jaat linkin sosiaaliseen mediaan. [Lisätietoja](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) kuvien pikkukuvista.",
-          "fr": "S'affiche lorsqu'un lien est partagé sur les réseaux sociaux. [En savoir plus sur](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) les images miniatures.",
-          "hi": "सोशल मीडिया पर लिंक शेयर करते समय दिखाना. [इमेज थंबनेल के बारे में](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) और अधिक जानें .",
-          "it": "Mostrata quando si condivide un link sui social media. [Maggiori informazioni](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) sulle immagini di anteprima.",
-          "ja": "ソーシャルメディアでリンクを共有すると表示されます。[サムネイル画像](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/)に関する詳細をご覧ください。",
-          "ko": "소셜 미디어에서 링크 공유 시 표시 이미지 썸네일에 대해 [자세히 알아보기](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/)",
-          "nb": "Vist når en kobling deles i sosiale medier. [Finn ut mer](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) om miniatyrbilder.",
-          "nl": "Wordt weergegeven wanneer je een link deelt via social media. [Meer informatie](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) over miniatuurafbeeldingen.",
-          "pt-BR": "Exibida ao compartilhar um link nas redes sociais. [Saiba mais](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) sobre miniaturas de imagens.",
-          "pt-PT": "Apresentada ao partilhar uma ligação nas redes sociais. [Saiba mais](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) sobre miniaturas de imagem.",
-          "sv": "Visas när du delar en länk på sociala medier. [Läs mer](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) om miniatyrbilder.",
-          "th": "แสดงเมื่อแชร์ลิงก์บนโซเชียลมีเดีย [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/) เกี่ยวกับรูปภาพขนาดย่อ",
-          "zh-CN": "在社交媒体上分享链接时显示。[详细了解](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/)缩略图。",
-          "zh-TW": "在社群媒體上分享連結時顯示。[深入瞭解圖片縮圖的相關資訊。](https:\/\/help.shopify.com\/manual\/using-themes\/troubleshooting\/showing-social-media-thumbnail-images\/)"
-        }
-      },
-      {
-        "type": "header",
-        "content": {
+          "cs": "Možnosti pro sdílení na sociálních sítích",
           "da": "Muligheder for deling på sociale medier",
           "de": "Teilen auf Social Media",
           "en": "Social sharing options",
@@ -829,10 +879,13 @@
           "ko": "소셜 공유 옵션",
           "nb": "Knapper for deling på sosiale medier",
           "nl": "Opties voor sociaal delen",
+          "pl": "Opcje udostępniania w mediach społecznościowych",
           "pt-BR": "Opções de compartilhamento em redes sociais",
           "pt-PT": "Opções de partilha em redes sociais",
           "sv": "Alternativ för delning i sociala medier",
           "th": "ตัวเลือกการแชร์ไปยังโซเชียลมีเดีย",
+          "tr": "Sosyal medya paylaşım seçenekleri",
+          "vi": "Tùy chọn chia sẻ qua mạng xã hội",
           "zh-CN": "社交分享选项",
           "zh-TW": "社群分享選項"
         }
@@ -841,6 +894,7 @@
         "type": "checkbox",
         "id": "share_facebook",
         "label": {
+          "cs": "Sdílet na Facebooku",
           "da": "Del på Facebook",
           "de": "Teilen auf Facebook",
           "en": "Share on Facebook",
@@ -853,10 +907,13 @@
           "ko": "Facebook에서 공유",
           "nb": "Del på Facebook",
           "nl": "Delen op Facebook",
+          "pl": "Udostępnij na Facebooku",
           "pt-BR": "Compartilhar no Facebook",
           "pt-PT": "Partilhe no Facebook",
           "sv": "Dela på Facebook",
           "th": "แชร์บน Facebook",
+          "tr": "Facebook'ta paylaş",
+          "vi": "Chia sẻ trên Facebook",
           "zh-CN": "在 Facebook 上共享",
           "zh-TW": "分享至 Facebook"
         },
@@ -866,6 +923,7 @@
         "type": "checkbox",
         "id": "share_twitter",
         "label": {
+          "cs": "Tweetnout na Twitteru",
           "da": "Tweet på Twitter",
           "de": "Tweet auf Twitter",
           "en": "Tweet on Twitter",
@@ -878,10 +936,13 @@
           "ko": "Twitter에서 트윗 작성",
           "nb": "Tweet på Twitter",
           "nl": "Twitteren op Twitter",
+          "pl": "Tweetuj na Twitterze",
           "pt-BR": "Tuitar",
           "pt-PT": "Twittar no Twitter",
           "sv": "Twittra på Twitter",
           "th": "ทวีตบน Twitter",
+          "tr": "Twitter'da tweet'le",
+          "vi": "Tweet trên Twitter",
           "zh-CN": "在 Twitter 上发推文",
           "zh-TW": "在 Twitter 上發佈推文"
         },
@@ -891,6 +952,7 @@
         "type": "checkbox",
         "id": "share_pinterest",
         "label": {
+          "cs": "Připnout na Pinterestu",
           "da": "Pin på Pinterest",
           "de": "Pin auf Pinterest",
           "en": "Pin on Pinterest",
@@ -903,10 +965,13 @@
           "ko": "Pinterest에 고정하기",
           "nb": "Pin på Pinterest",
           "nl": "Pinnen op Pinterest",
+          "pl": "Przypnij do tablicy Pinterest",
           "pt-BR": "Incluir como pin no Pinterest",
           "pt-PT": "Adicione no Pinterest",
           "sv": "Spara en pin på Pinterest",
           "th": "ปักหมุดบน Pinterest",
+          "tr": "Pinterest'te pin ekle",
+          "vi": "Ghim trên Pinterest",
           "zh-CN": "固定在 Pinterest 上",
           "zh-TW": "加入 Pinterest"
         },
@@ -915,6 +980,7 @@
       {
         "type": "header",
         "content": {
+          "cs": "Účty na sociálních sítích",
           "da": "SoMe-konti",
           "de": "Social Media",
           "en": "Social accounts",
@@ -927,10 +993,13 @@
           "ko": "소셜 계정",
           "nb": "Sosiale kontoer",
           "nl": "Socialmedia-accounts",
+          "pl": "Konta społecznościowe",
           "pt-BR": "Contas de redes sociais",
           "pt-PT": "Contas de redes sociais",
           "sv": "Sociala konton",
           "th": "บัญชีโซเชียลมีเดีย",
+          "tr": "Sosyal medya hesapları",
+          "vi": "Tài khoản mạng xã hội",
           "zh-CN": "社媒账户",
           "zh-TW": "社群帳戶"
         }
@@ -939,6 +1008,7 @@
         "type": "text",
         "id": "social_twitter_link",
         "label": {
+          "cs": "Twitter",
           "da": "Twitter",
           "de": "Twitter",
           "en": "Twitter",
@@ -951,14 +1021,18 @@
           "ko": "Twitter",
           "nb": "Twitter",
           "nl": "Twitter",
+          "pl": "Twitter",
           "pt-BR": "Twitter",
           "pt-PT": "Twitter",
           "sv": "Twitter",
           "th": "Twitter",
+          "tr": "Twitter",
+          "vi": "Twitter",
           "zh-CN": "Twitter",
           "zh-TW": "Twitter"
         },
         "info": {
+          "cs": "https:\/\/twitter.com\/shopify",
           "da": "https:\/\/twitter.com\/shopify",
           "de": "https:\/\/twitter.com\/shopify",
           "en": "https:\/\/twitter.com\/shopify",
@@ -971,10 +1045,13 @@
           "ko": "https:\/\/twitter.com\/shopify",
           "nb": "https:\/\/twitter.com\/shopify",
           "nl": "https:\/\/twitter.com\/shopify",
+          "pl": "https:\/\/twitter.com\/shopify",
           "pt-BR": "https:\/\/twitter.com\/shopify",
           "pt-PT": "https:\/\/twitter.com\/shopify",
           "sv": "https:\/\/twitter.com\/shopify",
           "th": "https:\/\/twitter.com\/shopify",
+          "tr": "https:\/\/twitter.com\/shopify",
+          "vi": "https:\/\/twitter.com\/shopify",
           "zh-CN": "https:\/\/twitter.com\/shopify",
           "zh-TW": "https:\/\/twitter.com\/shopify"
         }
@@ -983,6 +1060,7 @@
         "type": "text",
         "id": "social_facebook_link",
         "label": {
+          "cs": "Facebook",
           "da": "Facebook",
           "de": "Facebook",
           "en": "Facebook",
@@ -995,14 +1073,18 @@
           "ko": "Facebook",
           "nb": "Facebook",
           "nl": "Facebook",
+          "pl": "Facebook",
           "pt-BR": "Facebook",
           "pt-PT": "Facebook",
           "sv": "Facebook",
           "th": "Facebook",
+          "tr": "Facebook",
+          "vi": "Facebook",
           "zh-CN": "Facebook",
           "zh-TW": "Facebook"
         },
         "info": {
+          "cs": "https:\/\/facebook.com\/shopify",
           "da": "https:\/\/facebook.com\/shopify",
           "de": "https:\/\/facebook.com\/shopify",
           "en": "https:\/\/facebook.com\/shopify",
@@ -1015,10 +1097,13 @@
           "ko": "https:\/\/facebook.com\/shopify",
           "nb": "https:\/\/facebook.com\/shopify",
           "nl": "https:\/\/facebook.com\/shopify",
+          "pl": "https:\/\/facebook.com\/shopify",
           "pt-BR": "https:\/\/facebook.com\/shopify",
           "pt-PT": "https:\/\/facebook.com\/shopify",
           "sv": "https:\/\/www.facebook.com\/shopify",
           "th": "https:\/\/facebook.com\/shopify",
+          "tr": "https:\/\/facebook.com\/shopify",
+          "vi": "https:\/\/facebook.com\/shopify",
           "zh-CN": "https:\/\/facebook.com\/shopify",
           "zh-TW": "https:\/\/facebook.com\/shopify"
         }
@@ -1027,6 +1112,7 @@
         "type": "text",
         "id": "social_pinterest_link",
         "label": {
+          "cs": "Pinterest",
           "da": "Pinterest",
           "de": "Pinterest",
           "en": "Pinterest",
@@ -1039,14 +1125,18 @@
           "ko": "Pinterest",
           "nb": "Pinterest",
           "nl": "Pinterest",
+          "pl": "Pinterest",
           "pt-BR": "Pinterest",
           "pt-PT": "Pinterest",
           "sv": "Pinterest",
           "th": "Pinterest",
+          "tr": "Pinterest",
+          "vi": "Pinterest",
           "zh-CN": "Pinterest",
           "zh-TW": "Pinterest"
         },
         "info": {
+          "cs": "https:\/\/pinterest.com\/shopify",
           "da": "https:\/\/pinterest.com\/shopify",
           "de": "https:\/\/pinterest.com\/shopify",
           "en": "https:\/\/pinterest.com\/shopify",
@@ -1059,10 +1149,13 @@
           "ko": "https:\/\/pinterest.com\/shopify",
           "nb": "https:\/\/pinterest.com\/shopify",
           "nl": "https:\/\/pinterest.com\/shopify",
+          "pl": "https:\/\/pinterest.com\/shopify",
           "pt-BR": "https:\/\/pinterest.com\/shopify",
           "pt-PT": "https:\/\/pinterest.com\/shopify",
           "sv": "https:\/\/www.pinterest.com\/shopify",
           "th": "https:\/\/pinterest.com\/shopify",
+          "tr": "https:\/\/pinterest.com\/shopify",
+          "vi": "https:\/\/pinterest.com\/shopify",
           "zh-CN": "https:\/\/pinterest.com\/shopify",
           "zh-TW": "https:\/\/pinterest.com\/shopify"
         }
@@ -1071,6 +1164,7 @@
         "type": "text",
         "id": "social_instagram_link",
         "label": {
+          "cs": "Instagram",
           "da": "Instagram",
           "de": "Instagram",
           "en": "Instagram",
@@ -1083,14 +1177,18 @@
           "ko": "Instagram",
           "nb": "Instagram",
           "nl": "Instagram",
+          "pl": "Instagram",
           "pt-BR": "Instagram",
           "pt-PT": "Instagram",
           "sv": "Instagram",
           "th": "Instagram",
+          "tr": "Instagram",
+          "vi": "Instagram",
           "zh-CN": "Instagram",
           "zh-TW": "Instagram"
         },
         "info": {
+          "cs": "http:\/\/instagram.com\/shopify",
           "da": "http:\/\/instagram.com\/shopify",
           "de": "http:\/\/instagram.com\/shopify",
           "en": "http:\/\/instagram.com\/shopify",
@@ -1103,10 +1201,13 @@
           "ko": "http:\/\/instagram.com\/shopify",
           "nb": "http:\/\/instagram.com\/shopify",
           "nl": "http:\/\/instagram.com\/shopify",
+          "pl": "http:\/\/instagram.com\/shopify",
           "pt-BR": "http:\/\/instagram.com\/shopify",
           "pt-PT": "http:\/\/instagram.com\/shopify",
           "sv": "https:\/\/instagram.com\/shopify",
           "th": "http:\/\/instagram.com\/shopify",
+          "tr": "http:\/\/instagram.com\/shopify",
+          "vi": "http:\/\/instagram.com\/shopify",
           "zh-CN": "http:\/\/instagram.com\/shopify",
           "zh-TW": "http:\/\/instagram.com\/shopify"
         }
@@ -1115,6 +1216,7 @@
         "type": "text",
         "id": "social_tumblr_link",
         "label": {
+          "cs": "Tumblr",
           "da": "Tumblr",
           "de": "Tumblr",
           "en": "Tumblr",
@@ -1127,14 +1229,18 @@
           "ko": "Tumblr",
           "nb": "Tumblr",
           "nl": "Tumblr",
+          "pl": "Tumblr",
           "pt-BR": "Tumblr",
           "pt-PT": "Tumblr",
           "sv": "Tumblr",
           "th": "Tumblr",
+          "tr": "Tumblr",
+          "vi": "Tumblr",
           "zh-CN": "Tumblr",
           "zh-TW": "Tumblr"
         },
         "info": {
+          "cs": "http:\/\/shopify.tumblr.com",
           "da": "http:\/\/shopify.tumblr.com",
           "de": "http:\/\/shopify.tumblr.com",
           "en": "http:\/\/shopify.tumblr.com",
@@ -1147,10 +1253,13 @@
           "ko": "http:\/\/shopify.tumblr.com",
           "nb": "http:\/\/shopify.tumblr.com",
           "nl": "http:\/\/shopify.tumblr.com",
+          "pl": "http:\/\/shopify.tumblr.com",
           "pt-BR": "http:\/\/shopify.tumblr.com",
           "pt-PT": "http:\/\/shopify.tumblr.com",
           "sv": "http:\/\/shopify.tumblr.com",
           "th": "http:\/\/shopify.tumblr.com",
+          "tr": "http:\/\/shopify.tumblr.com",
+          "vi": "http:\/\/shopify.tumblr.com",
           "zh-CN": "http:\/\/shopify.tumblr.com",
           "zh-TW": "http:\/\/shopify.tumblr.com"
         }
@@ -1159,6 +1268,7 @@
         "type": "text",
         "id": "social_snapchat_link",
         "label": {
+          "cs": "Snapchat",
           "da": "Snapchat",
           "de": "Snapchat",
           "en": "Snapchat",
@@ -1171,14 +1281,18 @@
           "ko": "Snapchat",
           "nb": "Snapchat",
           "nl": "Snapchat",
+          "pl": "Snapchat",
           "pt-BR": "Snapchat",
           "pt-PT": "Snapchat",
           "sv": "Snapchat",
           "th": "Snapchat",
+          "tr": "Snapchat",
+          "vi": "Snapchat",
           "zh-CN": "Snapchat",
           "zh-TW": "Snapchat"
         },
         "info": {
+          "cs": "https:\/\/www.snapchat.com\/add\/shopify",
           "da": "https:\/\/www.snapchat.com\/add\/shopify",
           "de": "https:\/\/www.snapchat.com\/add\/shopify",
           "en": "https:\/\/www.snapchat.com\/add\/shopify",
@@ -1191,10 +1305,13 @@
           "ko": "https:\/\/www.snapchat.com\/add\/shopify",
           "nb": "https:\/\/snapchat.com\/add\/shopify",
           "nl": "https:\/\/www.snapchat.com\/add\/shopify",
+          "pl": "https:\/\/www.snapchat.com\/add\/shopify",
           "pt-BR": "https:\/\/www.snapchat.com\/add\/shopify",
           "pt-PT": "https:\/\/www.snapchat.com\/add\/shopify",
           "sv": "https:\/\/www.snapchat.com\/add\/shopify",
           "th": "https:\/\/www.snapchat.com\/add\/shopify",
+          "tr": "https:\/\/www.snapchat.com\/add\/shopify",
+          "vi": "https:\/\/www.snapchat.com\/add\/shopify",
           "zh-CN": "https:\/\/www.snapchat.com\/add\/shopify",
           "zh-TW": "https:\/\/www.snapchat.com\/add\/shopify"
         }
@@ -1203,6 +1320,7 @@
         "type": "text",
         "id": "social_youtube_link",
         "label": {
+          "cs": "YouTube",
           "da": "YouTube",
           "de": "YouTube",
           "en": "YouTube",
@@ -1215,14 +1333,18 @@
           "ko": "YouTube",
           "nb": "YouTube",
           "nl": "YouTube",
+          "pl": "Youtube",
           "pt-BR": "YouTube",
           "pt-PT": "YouTube",
           "sv": "YouTube",
           "th": "YouTube",
+          "tr": "YouTube",
+          "vi": "YouTube",
           "zh-CN": "YouTube",
           "zh-TW": "YouTube"
         },
         "info": {
+          "cs": "https:\/\/www.youtube.com\/shopify",
           "da": "https:\/\/www.youtube.com\/shopify",
           "de": "https:\/\/www.youtube.com\/shopify",
           "en": "https:\/\/www.youtube.com\/shopify",
@@ -1235,10 +1357,13 @@
           "ko": "https:\/\/www.youtube.com\/shopify",
           "nb": "https:\/\/www.youtube.com\/shopify",
           "nl": "https:\/\/www.youtube.com\/shopify",
+          "pl": "https:\/\/www.youtube.com\/shopify",
           "pt-BR": "https:\/\/www.youtube.com\/shopify",
           "pt-PT": "https:\/\/www.youtube.com\/shopify",
           "sv": "https:\/\/www.youtube.com\/user\/shopify",
           "th": "https:\/\/www.youtube.com\/shopify",
+          "tr": "https:\/\/www.youtube.com\/shopify",
+          "vi": "https:\/\/www.youtube.com\/shopify",
           "zh-CN": "https:\/\/www.youtube.com\/shopify",
           "zh-TW": "https:\/\/www.youtube.com\/shopify"
         }
@@ -1247,6 +1372,7 @@
         "type": "text",
         "id": "social_vimeo_link",
         "label": {
+          "cs": "Vimeo",
           "da": "Vimeo",
           "de": "Vimeo",
           "en": "Vimeo",
@@ -1259,14 +1385,18 @@
           "ko": "Vimeo",
           "nb": "Vimeo",
           "nl": "Vimeo",
+          "pl": "Vimeo",
           "pt-BR": "Vimeo",
           "pt-PT": "Vimeo",
           "sv": "Vimeo",
           "th": "Vimeo",
+          "tr": "Vimeo",
+          "vi": "Vimeo",
           "zh-CN": "Vimeo",
           "zh-TW": "Vimeo"
         },
         "info": {
+          "cs": "https:\/\/vimeo.com\/shopify",
           "da": "https:\/\/vimeo.com\/shopify",
           "de": "https:\/\/vimeo.com\/shopify",
           "en": "https:\/\/vimeo.com\/shopify",
@@ -1279,10 +1409,13 @@
           "ko": "https:\/\/vimeo.com\/shopify",
           "nb": "https:\/\/vimeo.com\/shopify",
           "nl": "https:\/\/vimeo.com\/shopify",
+          "pl": "https:\/\/vimeo.com\/shopify",
           "pt-BR": "https:\/\/vimeo.com\/shopify",
           "pt-PT": "https:\/\/vimeo.com\/shopify",
           "sv": "https:\/\/vimeo.com\/shopify",
           "th": "https:\/\/vimeo.com\/shopify",
+          "tr": "https:\/\/vimeo.com\/shopify",
+          "vi": "https:\/\/vimeo.com\/shopify",
           "zh-CN": "https:\/\/vimeo.com\/shopify",
           "zh-TW": "https:\/\/vimeo.com\/shopify"
         }
@@ -1291,6 +1424,7 @@
   },
   {
     "name": {
+      "cs": "Favikona",
       "da": "Favoritikon",
       "de": "Favicon",
       "en": "Favicon",
@@ -1303,10 +1437,13 @@
       "ko": "Favicon",
       "nb": "Favicon",
       "nl": "Favicon",
+      "pl": "Ikona Favicon",
       "pt-BR": "Favicon",
       "pt-PT": "Favicon",
       "sv": "Favicon",
       "th": "Favicon",
+      "tr": "Favicon",
+      "vi": "Biểu tượng trang web",
       "zh-CN": "网站图标",
       "zh-TW": "Favicon"
     },
@@ -1315,6 +1452,7 @@
         "type": "image_picker",
         "id": "favicon",
         "label": {
+          "cs": "Obrázek favikony",
           "da": "Billede for favoritikon",
           "de": "Favicon-Foto",
           "en": "Favicon image",
@@ -1327,14 +1465,18 @@
           "ko": "파비콘 이미지",
           "nb": "Favicon-bilde",
           "nl": "Favicon-afbeelding",
+          "pl": "Obraz ikony Favicon",
           "pt-BR": "Imagem favicon",
           "pt-PT": "Imagem Favicon",
           "sv": "Favicon-bild",
           "th": "รูปภาพ Favicon",
+          "tr": "Favicon görseli",
+          "vi": "Hình ảnh biểu tượng trang web",
           "zh-CN": "网站图标图片",
           "zh-TW": "Favicon 圖片"
         },
         "info": {
+          "cs": "Dojde ke zmenšení na 32 × 32 px",
           "da": "Skaleres ned til 32 x 32 px",
           "de": "Wird in der Größe 32 x 32 px angezeigt",
           "en": "Will be scaled down to 32 x 32px",
@@ -1347,10 +1489,13 @@
           "ko": "32x32 픽셀로 축소됩니다.",
           "nb": "Vil skaleres ned til 32 x 32 px",
           "nl": "Wordt verkleind tot 32x32 pixels",
+          "pl": "Zostanie zmniejszony do rozmiaru 32 x 32 px",
           "pt-BR": "será reduzida para 32 x 32 pixels",
           "pt-PT": "Será reduzida para 32 x 32 px",
           "sv": "Kommer skalas ned till 32 x 32 px",
           "th": "จะถูกลดขนาดลงเป็น 32 x 32 พิกเซล",
+          "tr": "Ölçeği 32 x 32 piksele düşürülür",
+          "vi": "Sẽ được thu nhỏ xuống 32 x 32px",
           "zh-CN": "将缩小到 32 x 32px",
           "zh-TW": "將會縮小為 32 x 32 像素"
         }
@@ -1359,6 +1504,7 @@
   },
   {
     "name": {
+      "cs": "Notifikace o přidání do košíku",
       "da": "Meddelelse for læg i indkøbskurven",
       "de": "Benachrichtigung für „Zum Warenkorb hinzufügen“",
       "en": "Add to cart notification",
@@ -1371,10 +1517,13 @@
       "ko": "카트 알림에 추가",
       "nb": "Legg til i handlekurv-varsel",
       "nl": "Melding Toevoegen aan winkelwagen",
+      "pl": "Powiadomienie o dodaniu do koszyka",
       "pt-BR": "Notificação de Adicionar ao carrinho",
       "pt-PT": "Notificação de adicionar ao carrinho",
       "sv": "Lägg till i varukorgens meddelande",
       "th": "การแจ้งเตือนการเพิ่มลงในตะกร้าสินค้า",
+      "tr": "Sepet bildirimine ekle",
+      "vi": "Thông báo thêm vào giỏ hàng",
       "zh-CN": "添加到购物车的通知",
       "zh-TW": "「新增至購物車」通知"
     },
@@ -1383,6 +1532,7 @@
         "type": "checkbox",
         "id": "enable_ajax",
         "label": {
+          "cs": "Zobrazit notifikaci v případě, že je položka přidána do košíku",
           "da": "Vis meddelelse, når vare lægges i indkøbskurven",
           "de": "Benachrichtigung anzeigen, wenn Artikel in den Warenkorb gelegt wird",
           "en": "Show notification when item is added to cart",
@@ -1395,10 +1545,13 @@
           "ko": "품목이 카트에 추가되면 알림 표시",
           "nb": "Vis et varsel når produktet legges til i handlekurven",
           "nl": "Melding weergeven wanneer artikel aan winkelwagen is toegevoegd",
+          "pl": "Pokaż powiadomienie, gdy pozycja zostanie dodana do koszyka",
           "pt-BR": "Exibir notificação quando o item for adicionado ao carrinho",
           "pt-PT": "Mostrar notificação quando o item é adicionado ao carrinho",
           "sv": "Visa meddelande när objektet läggs till i varukorgen",
           "th": "แสดงการแจ้งเตือนเมื่อมีการเพิ่มสินค้าลงในตะกร้า",
+          "tr": "Ürün sepete eklendiğinde bildirim göster",
+          "vi": "Hiển thị thông báo khi thêm mặt hàng vào giỏ hàng",
           "zh-CN": "将产品添加到购物车时显示通知",
           "zh-TW": "新增商品至購物車時顯示通知"
         },

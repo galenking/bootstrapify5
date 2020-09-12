@@ -173,7 +173,7 @@
       "empty": "カート内に商品がありません。",
       "cookies_required": "カートを使うためにCookieを有効にする",
       "continue_shopping": "買い物を続ける",
-      "cart_error": "あなたのカートをアップデートするときにエラーが発生しました。再度お試しください。"
+      "cart_error": "お客様のカートをアップデートするときにエラーが発生しました。再度お試しください。"
     },
     "label": {
       "discounted_total": "ディスカウント合計",
@@ -285,7 +285,7 @@
       "order_number_link": "注文番号 {{ number }}",
       "date": "日付",
       "payment_status": "お支払い状況",
-      "fulfillment_status": "フルフィルメントの状況",
+      "fulfillment_status": "配送状況",
       "total": "合計",
       "none": "まだ注文を確定していません。"
     },
@@ -297,7 +297,7 @@
       "billing_address": "請求先住所",
       "payment_status": "お支払いの状況",
       "shipping_address": "配送先住所",
-      "fulfillment_status": "フルフィルメントの状況",
+      "fulfillment_status": "配送状況",
       "discount": "ディスカウント",
       "shipping": "送料",
       "tax": "税",
@@ -306,7 +306,7 @@
       "price": "価格",
       "quantity": "個数",
       "total": "合計",
-      "fulfilled_at_html": "フルフィルメントされた日付 {{ date }}",
+      "fulfilled_at_html": "発送日 {{ date }}",
       "subtotal": "小計",
       "track_shipment": "荷物を追跡"
     },
@@ -316,7 +316,7 @@
       "submit": "送信する",
       "cancel": "キャンセル",
       "subtext": "パスワードをリセットするためのメールを送ります。",
-      "success": "パスワードをアップデートするためのメールを送信しました。"
+      "success": "パスワードを更新するためのメールを送信しました。"
     },
     "reset_password": {
       "title": "アカウントのパスワードをリセットする",

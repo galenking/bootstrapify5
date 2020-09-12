@@ -3,15 +3,15 @@
     "accessibility": {
       "skip_to_content": "Přeskočit na obsah",
       "close_modal": "Zavřít",
+      "refresh_page": "Po výběru volby se provede obnovení celé stránky.",
+      "selection_help": "Výběr provedete mezerníkem a potom šipkami.",
+      "unit_price_separator": "za",
+      "error": "Chyba",
       "link_messages": {
         "new_window": "Otevře se v novém okně.",
         "external": "Otevře externí webovou stránku.",
         "new_window_and_external": "Otevře externí webovou stránku v novém okně."
-      },
-      "refresh_page": "Po výběru volby se provede obnovení celé stránky.",
-      "selection_help": "Výběr provedete mezerníkem a potom šipkami.",
-      "unit_price_separator": "za",
-      "error": "Chyba"
+      }
     },
     "meta": {
       "tags": "Označeno „{{ tags }}“",
@@ -54,10 +54,6 @@
       "placeholder": "Hledat",
       "submit": "Odeslat",
       "close": "Zavřít hledání",
-      "heading": {
-        "one": "Výsledek hledání",
-        "other": "Výsledky hledání"
-      },
       "search_for": "Vyhledat:",
       "loading": "Načítání",
       "clear_search_term": "Vymazat hledaný termín",
@@ -66,9 +62,17 @@
       "number_of_results_found": "Počet nalezených výsledků: {{ results_count }}",
       "one_result_found": "Počet nalezených výsledků: 1",
       "no_results": "Zkuste zkontrolovat pravopis nebo použít jiná slova.",
+      "heading": {
+        "one": "Výsledek hledání",
+        "other": "Výsledky hledání",
+        "few": "Výsledky hledání",
+        "many": "Výsledky hledání"
+      },
       "results_with_count": {
         "one": "{{ count }} výsledek pro hledání {{ terms }}",
-        "other": "Počet výsledků pro hledání {{ terms }}: {{ count }}"
+        "other": "Počet výsledků pro hledání {{ terms }}: {{ count }}",
+        "few": "Počet výsledků pro hledání {{ terms }}: {{ count }}",
+        "many": "Počet výsledků pro hledání {{ terms }}: {{ count }}"
       }
     },
     "newsletter_form": {
@@ -137,7 +141,9 @@
       "article_with_count": {
         "one": "1 článek",
         "other": "Počet článků: {{ count }}",
-        "zero": "0 článků"
+        "zero": "0 článků",
+        "few": "Počet článků: {{ count }}",
+        "many": "Počet článků: {{ count }}"
       }
     },
     "comments": {
@@ -152,7 +158,9 @@
       "unapproved": "Zadaná e-mailová adresa nemá schválení pro zveřejňování komentářů.",
       "comments_with_count": {
         "one": "{{ count }} komentář",
-        "other": "Komentáře (celkem {{ count }})"
+        "other": "Komentáře (celkem {{ count }})",
+        "few": "Komentáře (celkem {{ count }})",
+        "many": "Komentáře (celkem {{ count }})"
       }
     }
   },
@@ -190,13 +198,15 @@
     },
     "popup": {
       "added_to_cart": "Přidáno do košíku",
-      "cart_count": {
-        "one": "{{ count }} položka",
-        "other": "{{ count }} položek"
-      },
       "product_details": "Údaje o produktu",
       "quantity": "Množství",
-      "quantity_label": "Množství: {{ quantity_count }}"
+      "quantity_label": "Množství: {{ quantity_count }}",
+      "cart_count": {
+        "one": "{{ count }} položka",
+        "other": "{{ count }} položek",
+        "few": "{{ count }} položek",
+        "many": "{{ count }} položek"
+      }
     }
   },
   "collections": {
@@ -204,11 +214,13 @@
       "view_all": "Zobrazit vše",
       "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}",
       "no_matches": "Je nám líto, v této kolekci nejsou žádné produkty",
+      "collection_label": "Kolekce",
       "items_with_count": {
         "one": "Produkty: {{ count }}",
-        "other": "Produkty: {{ count }}"
-      },
-      "collection_label": "Kolekce"
+        "other": "Produkty: {{ count }}",
+        "few": "Produkty: {{ count }}",
+        "many": "Produkty: {{ count }}"
+      }
     },
     "catalog": {
       "title": "Katalog"
@@ -359,7 +371,9 @@
       "title": "Košík",
       "items_count": {
         "one": "položka",
-        "other": "položek"
+        "other": "položek",
+        "few": "položek",
+        "many": "položek"
       }
     },
     "customer": {

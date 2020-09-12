@@ -3,15 +3,15 @@
     "accessibility": {
       "skip_to_content": "Перейти к контенту",
       "close_modal": "Закрыть",
+      "refresh_page": "Выбор выделенного элемента приводит к полному обновлению страницы.",
+      "selection_help": "Нажмите клавишу пробела, а затем клавиши со стрелками, чтобы выделить необходимый элемент.",
+      "unit_price_separator": "за",
+      "error": "Ошибка",
       "link_messages": {
         "new_window": "Открывается в новом окне.",
         "external": "Открывает внешний сайт.",
         "new_window_and_external": "Открывает внешний сайт в новом окне."
-      },
-      "refresh_page": "Выбор выделенного элемента приводит к полному обновлению страницы.",
-      "selection_help": "Нажмите клавишу пробела, а затем клавиши со стрелками, чтобы выделить необходимый элемент.",
-      "unit_price_separator": "за",
-      "error": "Ошибка"
+      }
     },
     "meta": {
       "tags": "Помечено \"{{ tags }}\"",
@@ -50,18 +50,10 @@
     },
     "search": {
       "empty_search_message": "Поле поиска не может быть пустым",
-      "results_with_count": {
-        "one": "Результатов по запросу \"{{ terms }}\": {{ count }}",
-        "other": "Результатов по запросу \"{{ terms }}\": {{ count }}"
-      },
       "title": "Поиск на нашем сайте",
       "placeholder": "Поиск",
       "submit": "Отправить",
       "close": "Закрыть окно поиска",
-      "heading": {
-        "one": "Результат поиска",
-        "other": "Результаты поиска"
-      },
       "no_results": "Проверьте правописание или выберите другие слова.",
       "search_for": "Поиск",
       "products": "Продукты",
@@ -69,7 +61,19 @@
       "clear_search_term": "Удалить поисковой запрос",
       "number_of_results": "{{ result_number }} из {{ results_count }}",
       "number_of_results_found": "Найдено результатов: {{ results_count }}",
-      "one_result_found": "Найден 1 результат"
+      "one_result_found": "Найден 1 результат",
+      "results_with_count": {
+        "one": "Результатов по запросу \"{{ terms }}\": {{ count }}",
+        "other": "Результатов по запросу \"{{ terms }}\": {{ count }}",
+        "few": "Результатов по запросу \"{{ terms }}\": {{ count }}",
+        "many": "Результатов по запросу \"{{ terms }}\": {{ count }}"
+      },
+      "heading": {
+        "one": "Результат поиска",
+        "other": "Результаты поиска",
+        "few": "Результаты поиска",
+        "many": "Результаты поиска"
+      }
     },
     "newsletter_form": {
       "newsletter_email": "Подпишитесь на нашу почтовую рассылку",
@@ -137,7 +141,9 @@
       "article_with_count": {
         "zero": "Статей нет",
         "one": "1 статья",
-        "other": "Статей: {{ count }}"
+        "other": "Статей: {{ count }}",
+        "few": "Статей: {{ count }}",
+        "many": "Статей: {{ count }}"
       }
     },
     "comments": {
@@ -152,7 +158,9 @@
       "unapproved": "Указанный адрес электронной почты не одобрен для размещения комментариев.",
       "comments_with_count": {
         "one": "{{ count }} комментарий",
-        "other": "Комментариев: {{ count }}"
+        "other": "Комментариев: {{ count }}",
+        "few": "Комментариев: {{ count }}",
+        "many": "Комментариев: {{ count }}"
       }
     }
   },
@@ -190,13 +198,15 @@
     },
     "popup": {
       "added_to_cart": "Только что добавлено в корзину",
-      "cart_count": {
-        "one": "{{ count }} элемент",
-        "other": "Элементов: {{ count }}"
-      },
       "product_details": "Информация о продукте",
       "quantity": "Кол-во",
-      "quantity_label": "Количество: {{ quantity_count }}"
+      "quantity_label": "Количество: {{ quantity_count }}",
+      "cart_count": {
+        "one": "{{ count }} элемент",
+        "other": "Элементов: {{ count }}",
+        "few": "Элементов: {{ count }}",
+        "many": "Элементов: {{ count }}"
+      }
     }
   },
   "collections": {
@@ -204,11 +214,13 @@
       "view_all": "Посмотреть все",
       "view_all_label": "Посмотреть все продукты в коллекции \"{{ collection_name }}\"",
       "no_matches": "В этой коллекции нет продуктов",
+      "collection_label": "Коллекция",
       "items_with_count": {
         "one": "{{ count }} продукт",
-        "other": "Продуктов: {{ count }}"
-      },
-      "collection_label": "Коллекция"
+        "other": "Продуктов: {{ count }}",
+        "few": "Продуктов: {{ count }}",
+        "many": "Продуктов: {{ count }}"
+      }
     },
     "catalog": {
       "title": "Каталог"
@@ -359,7 +371,9 @@
       "title": "Корзина",
       "items_count": {
         "one": "товар",
-        "other": "тов."
+        "other": "тов.",
+        "few": "тов.",
+        "many": "тов."
       }
     },
     "customer": {

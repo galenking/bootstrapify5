@@ -30,7 +30,8 @@
              data-bgset="{% include 'bgset', image: collection.image %}"
              data-sizes="auto"
              data-parent-fit="cover"
-             style="background-image: url('{{ collection.image | img_url: '300x300' }});"></div>
+             data-image-loading-animation
+        ></div>
         <noscript>
           <div class="collection-hero__image" style="background-image: url({{ collection.image | img_url: '2048x600', crop: 'top' }});"></div>
         </noscript>
@@ -80,7 +81,7 @@
                   <div class="filters-toolbar__item-child">
                     <label class="filters-toolbar__label select-label" for="FilterTags">{{ 'collections.filters.title_tags' | t }}</label>
                     <div class="filters-toolbar__input-wrapper select-group">
-                      <select class="filters-toolbar__input hidden" name="FilterTags" id="FilterTags" aria-describedby="a11y-refresh-page-message a11y-selection-message">
+                      <select class="filters-toolbar__input hidden" name="FilterTags" id="FilterTags" aria-describedby="a11y-refresh-page-message a11y-selection-message" data-select-input>
                         <option value="{{ collection.url }}">{{ 'collections.filters.all_tags' | t }}</option>
                         {% for tag in collection.all_tags %}
                           {%- assign new_url = tag | link_to_tag: tag | split: 'href="' | last | split: '"' | first -%}
@@ -102,6 +103,7 @@
                       class="filters-toolbar__input hidden"
                       aria-describedby="a11y-refresh-page-message a11y-selection-message"
                       data-default-sortby="{{ collection.default_sort_by }}"
+                      data-select-input
                     >
                       {%- for option in collection.sort_options -%}
                         <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>{{ option.name }}</option>
@@ -236,6 +238,7 @@
 {% schema %}
 {
   "name": {
+    "cs": "Stránky s kolekcemi",
     "da": "Kollektionssider",
     "de": "Kategorie-Seiten",
     "en": "Collection pages",
@@ -248,10 +251,13 @@
     "ko": "컬렉션 페이지",
     "nb": "Samlingssider",
     "nl": "Collectiepagina's",
+    "pl": "Strony kolekcji",
     "pt-BR": "Páginas de coleções",
     "pt-PT": "Páginas de coleções",
     "sv": "Produktseriesidor",
     "th": "หน้าคอลเลกชัน",
+    "tr": "Koleksiyon sayfaları",
+    "vi": "Trang bộ sưu tập",
     "zh-CN": "产品系列页面",
     "zh-TW": "商品系列頁面"
   },
@@ -260,6 +266,7 @@
       "type": "select",
       "id": "layout",
       "label": {
+        "cs": "Rozvržení",
         "da": "Layout",
         "de": "Layout",
         "en": "Layout",
@@ -272,10 +279,13 @@
         "ko": "레이아웃",
         "nb": "Oppsett",
         "nl": "Opmaak",
+        "pl": "Układ",
         "pt-BR": "Layout",
         "pt-PT": "Esquema",
         "sv": "Layout",
         "th": "เลย์เอาต์",
+        "tr": "Düzen",
+        "vi": "Bố cục",
         "zh-CN": "布局",
         "zh-TW": "版面配置"
       },
@@ -284,6 +294,7 @@
         {
           "value": "grid",
           "label": {
+            "cs": "Mřížka",
             "da": "Gitter",
             "de": "Raster",
             "en": "Grid",
@@ -296,10 +307,13 @@
             "ko": "그리드",
             "nb": "Rutenett",
             "nl": "Raster",
+            "pl": "Siatka",
             "pt-BR": "Grade",
             "pt-PT": "Grelha",
             "sv": "Rutnät",
             "th": "กริด",
+            "tr": "Izgara",
+            "vi": "Lưới",
             "zh-CN": "网格",
             "zh-TW": "網格"
           }
@@ -307,6 +321,7 @@
         {
           "value": "list",
           "label": {
+            "cs": "Seznam",
             "da": "Liste",
             "de": "Liste",
             "en": "List",
@@ -319,10 +334,13 @@
             "ko": "목록",
             "nb": "Liste",
             "nl": "Lijst",
+            "pl": "Lista",
             "pt-BR": "Lista",
             "pt-PT": "Lista",
             "sv": "Lista",
             "th": "รายการ",
+            "tr": "Liste",
+            "vi": "Danh sách",
             "zh-CN": "列表",
             "zh-TW": "清單"
           }
@@ -333,6 +351,7 @@
       "type": "range",
       "id": "grid",
       "label": {
+        "cs": "Počet produktů na řádek (jen mřížka)",
         "da": "Produkter pr. række (kun gitter)",
         "de": "Produkte per Reihe (nur Raster)",
         "en": "Products per row (grid only)",
@@ -345,10 +364,13 @@
         "ko": "열 별 제품 (그리드 전용)",
         "nb": "Produkter per rad (kun rutenett)",
         "nl": "Producten per rij (alleen raster)",
+        "pl": "Liczba produktów na wiersz (tylko siatka)",
         "pt-BR": "Produtos por linha (somente grade)",
         "pt-PT": "Produtos por linha (somente grelha)",
         "sv": "Produkter per rad (endast rutnät)",
         "th": "สินค้าต่อแถว (กริดเท่านั้น)",
+        "tr": "Satır başına ürün (yalnızca ızgara)",
+        "vi": "Số sản phẩm trên một hàng (chỉ ở kiểu lưới)",
         "zh-CN": "每行产品数（仅限网格）",
         "zh-TW": "每列產品數 (僅限網格)"
       },
@@ -361,6 +383,7 @@
       "type": "range",
       "id": "rows",
       "label": {
+        "cs": "Počet řádků na stránku (jen mřížka)",
         "da": "Rækker pr. side (kun gitter)",
         "de": "Reihen per Seite (nur Raster)",
         "en": "Rows per page (grid only)",
@@ -373,10 +396,13 @@
         "ko": "페이지 별 열 (그리드 전용)",
         "nb": "Rader per side (kun rutenett)",
         "nl": "Rijen per pagina (alleen raster)",
+        "pl": "Liczba wierszy na stronę (tylko siatka)",
         "pt-BR": "Linhas por página (somente grade)",
         "pt-PT": "Linhas por página (somente grelha)",
         "sv": "Rader per sida (endast rutnät)",
         "th": "แถวต่อหน้า (กริดเท่านั้น)",
+        "tr": "Sayfa başına satır (yalnızca ızgara)",
+        "vi": "Số hàng trong một trang (chỉ ở kiểu lưới)",
         "zh-CN": "每行产品数（仅限网格）",
         "zh-TW": "每頁列數 (僅限網格)"
       },
@@ -389,6 +415,7 @@
       "type": "checkbox",
       "id": "show_collection_image",
       "label": {
+        "cs": "Zobrazit obrázek kolekce",
         "da": "Vis kollektionsbillede",
         "de": "Kategorie-Foto anzeigen",
         "en": "Show collection image",
@@ -401,10 +428,13 @@
         "ko": "컬렉션 이미지 표시",
         "nb": "Vis samlingsbilde",
         "nl": "Collectieafbeelding weergeven",
+        "pl": "Pokaż obraz kolekcji",
         "pt-BR": "Exibir imagem da coleção",
         "pt-PT": "Mostrar imagem da coleção",
         "sv": "Visa produktseriebilder",
         "th": "แสดงรูปภาพคอลเลกชัน",
+        "tr": "Koleksiyon görselini göster",
+        "vi": "Hiển thị hình ảnh bộ sưu tập",
         "zh-CN": "显示产品系列图片",
         "zh-TW": "顯示商品系列圖片"
       },
@@ -414,6 +444,7 @@
       "type": "checkbox",
       "id": "show_vendor",
       "label": {
+        "cs": "Zobrazit dodavatele produktů",
         "da": "Vis produktleverandører",
         "de": "Produkt-Lieferanten anzeigen",
         "en": "Show product vendors",
@@ -426,10 +457,13 @@
         "ko": "제품 공급 업체 표시",
         "nb": "Vis produktleverandører",
         "nl": "Productleveranciers weergeven",
+        "pl": "Pokaż dostawców produktu",
         "pt-BR": "Exibir fornecedores do produto",
         "pt-PT": "Mostrar fornecedores do produto",
         "sv": "Visa produktleverantörer",
         "th": "แสดงผู้ขายสินค้า",
+        "tr": "Ürün satıcılarını göster",
+        "vi": "Hiển thị nhà cung cấp sản phẩm",
         "zh-CN": "显示产品厂商",
         "zh-TW": "顯示產品廠商"
       },
@@ -439,6 +473,7 @@
       "type": "checkbox",
       "id": "sort_enable",
       "label": {
+        "cs": "Povolit řazení",
         "da": "Aktivér sortering",
         "de": "Sortieren erlauben",
         "en": "Enable sorting",
@@ -451,10 +486,13 @@
         "ko": "정렬 사용",
         "nb": "Aktiver sortering",
         "nl": "Sortering inschakelen",
+        "pl": "Włącz sortowanie",
         "pt-BR": "Habilitar organização",
         "pt-PT": "Ativar ordenação",
         "sv": "Aktivera sortering",
-        "th": "เปิดใช้งานการจัดเรียง",
+        "th": "เปิดใช้การจัดเรียง",
+        "tr": "Sıralamayı etkinleştir",
+        "vi": "Bật phân loại",
         "zh-CN": "启用排序",
         "zh-TW": "啟用排序"
       },
@@ -464,6 +502,7 @@
       "type": "checkbox",
       "id": "tags_enable",
       "label": {
+        "cs": "Povolit filtrování podle štítku",
         "da": "Aktivér tagfiltrering",
         "de": "Tag-Filtern erlauben",
         "en": "Enable tag filtering",
@@ -476,10 +515,13 @@
         "ko": "태그 필터링 사용",
         "nb": "Aktiver taggfiltrering",
         "nl": "Filteren op tags inschakelen",
+        "pl": "Włącz filtrowanie tagów",
         "pt-BR": "Habilitar filtragem de tags",
         "pt-PT": "Ativar filtragem por etiqueta",
         "sv": "Aktivera taggfiltrering",
         "th": "เปิดใช้การกรองแท็ก",
+        "tr": "Etiket filtrelemeyi etkinleştir",
+        "vi": "Bật lọc thẻ",
         "zh-CN": "启用标签筛选",
         "zh-TW": "啟用標籤篩選功能"
       },

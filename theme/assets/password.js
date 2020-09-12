@@ -6,37 +6,41 @@ window.Modals = (function() {
       openClass: 'modal--is-active'
     };
 
-    this.$modal = $('#' + id);
+    this.modal = document.getElementById(id);
 
-    if (!this.$modal.length) {
-      return false;
-    }
+    if (!this.modal) return false;
 
     this.nodes = {
-      $parent: $('html').add('body')
+      parents: [document.querySelector('html'), document.body]
     };
-    this.config = $.extend(defaults, options);
+
+    this.config = Object.assign(defaults, options);
+
     this.modalIsOpen = false;
-    // eslint-disable-next-line shopify/jquery-dollar-sign-reference
-    this.$focusOnOpen = this.config.focusOnOpen
-      ? $(this.config.focusOnOpen)
-      : this.$modal;
+
+    this.focusOnOpen = this.config.focusOnOpen
+      ? document.getElementById(this.config.focusOnOpen)
+      : this.modal;
+
     this.init();
   }
 
   Modal.prototype.init = function() {
-    $(this.config.open).on('click', $.proxy(this.open, this));
-    this.$modal.find(this.config.close).on('click', $.proxy(this.close, this));
+    document
+      .querySelector(this.config.open)
+      .addEventListener('click', this.open.bind(this));
+
+    this.modal
+      .querySelector(this.config.close)
+      .addEventListener('click', this.closeModal.bind(this));
   };
 
   Modal.prototype.open = function(evt) {
+    var self = this;
     // Keep track if modal was opened from a click, or called by another function
     var externalCall = false;
 
-    // don't open an opened modal
-    if (this.modalIsOpen) {
-      return;
-    }
+    if (this.modalIsOpen) return;
 
     // Prevent following href if link is clicked
     if (evt) {
@@ -45,77 +49,74 @@ window.Modals = (function() {
       externalCall = true;
     }
 
-    // Without this, the modal opens, the click event bubbles up to $nodes.page
+    // Without this, the modal opens, the click event bubbles up
     // which closes the modal.
     if (evt && evt.stopPropagation) {
       evt.stopPropagation();
-      // save the source of the click, we'll focus to this on close
-      this.$activeSource = $(evt.currentTarget);
     }
 
     if (this.modalIsOpen && !externalCall) {
-      this.close();
+      this.closeModal();
     }
 
-    this.$modal.addClass(this.config.openClass);
-    this.nodes.$parent.addClass(this.config.openClass);
+    this.modal.classList.add(this.config.openClass);
+
+    this.nodes.parents.forEach(function(node) {
+      node.classList.add(self.config.openClass);
+    });
 
     this.modalIsOpen = true;
 
-    // Set focus on modal
     slate.a11y.trapFocus({
-      $container: this.$modal,
-      $elementToFocus: this.$focusOnOpen,
-      namespace: 'modal_focus'
+      container: this.modal,
+      elementToFocus: this.focusOnOpen
     });
 
     this.bindEvents();
   };
 
-  Modal.prototype.close = function() {
-    // don't close a closed modal
-    if (!this.modalIsOpen) {
-      return;
-    }
+  Modal.prototype.closeModal = function() {
+    if (!this.modalIsOpen) return;
 
-    // deselect any focused form elements
-    $(document.activeElement).trigger('blur');
+    document.activeElement.blur();
 
-    this.$modal.removeClass(this.config.openClass);
-    this.nodes.$parent.removeClass(this.config.openClass);
+    this.modal.classList.remove(this.config.openClass);
+
+    var self = this;
+
+    this.nodes.parents.forEach(function(node) {
+      node.classList.remove(self.config.openClass);
+    });
 
     this.modalIsOpen = false;
 
-    // Remove focus on modal
     slate.a11y.removeTrapFocus({
-      $container: this.$modal,
-      namespace: 'modal_focus'
+      container: this.modal
     });
 
     this.unbindEvents();
   };
 
   Modal.prototype.bindEvents = function() {
-    // Pressing escape closes modal
-    this.nodes.$parent.on(
-      'keyup.modal',
-      $.proxy(function(evt) {
-        if (evt.keyCode === 27) {
-          this.close();
-        }
-      }, this)
-    );
+    this.keyupHandler = this.keyupHandler.bind(this);
+    document.body.addEventListener('keyup', this.keyupHandler);
   };
 
   Modal.prototype.unbindEvents = function() {
-    this.nodes.$parent.off('.modal');
+    document.body.removeEventListener('keyup', this.keyupHandler);
+  };
+
+  Modal.prototype.keyupHandler = function(event) {
+    if (event.keyCode === 27) {
+      this.closeModal();
+    }
   };
 
   return Modal;
 })();
 
 
-$(function() {
+(function() {
   var selectors = {
     loginModal: '#LoginModal',
     loginField: '[data-login-field]'
@@ -133,11 +134,11 @@ $(function() {
   }
 
   var passwordModal = new window.Modals('LoginModal', 'login-modal', {
-    focusOnOpen: '#Password'
+    focusOnOpen: 'Password'
   });
 
   // Open modal if errors exist
   if (loginField.hasAttribute(data.formError)) {
     passwordModal.open();
   }
-});
+})();

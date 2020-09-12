@@ -302,7 +302,7 @@
       "shipping": "Toimitus",
       "tax": "Vero",
       "product": "Tuote",
-      "sku": "Varastoyksikkö",
+      "sku": "SKU-koodi",
       "price": "Hinta",
       "quantity": "Määrä",
       "total": "Yhteensä",

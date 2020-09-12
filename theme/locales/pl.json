@@ -3,15 +3,15 @@
     "accessibility": {
       "skip_to_content": "Przejdź do treści",
       "close_modal": "Zamknij",
+      "refresh_page": "Zaznaczenie wyboru powoduje pełne odświeżenie strony.",
+      "selection_help": "Naciśnij klawisz spacji, a następnie klawisze strzałek, aby dokonać wyboru.",
+      "unit_price_separator": "za",
+      "error": "Błąd",
       "link_messages": {
         "new_window": "Otwiera się w nowym oknie.",
         "external": "Otwiera zewnętrzną stronę internetową.",
         "new_window_and_external": "Otwiera zewnętrzną stronę internetową w nowym oknie."
-      },
-      "refresh_page": "Zaznaczenie wyboru powoduje pełne odświeżenie strony.",
-      "selection_help": "Naciśnij klawisz spacji, a następnie klawisze strzałek, aby dokonać wyboru.",
-      "unit_price_separator": "za",
-      "error": "Błąd"
+      }
     },
     "meta": {
       "tags": "Oznaczone tagiem \"{{ tags }}\"",
@@ -54,10 +54,6 @@
       "placeholder": "Szukaj",
       "submit": "Zatwierdź",
       "close": "Zamknij wyszukiwanie",
-      "heading": {
-        "one": "Wynik wyszukiwania",
-        "other": "Wyniki wyszukiwania"
-      },
       "search_for": "Szukaj",
       "loading": "Ładowanie",
       "clear_search_term": "Wyczyść szukany termin",
@@ -66,9 +62,17 @@
       "number_of_results_found": "Liczba znalezionych wyników: {{ results_count }}",
       "one_result_found": "Znaleziono 1 wynik",
       "no_results": "Spróbuj sprawdzić pisownię lub użyj innych słów.",
+      "heading": {
+        "one": "Wynik wyszukiwania",
+        "other": "Wyniki wyszukiwania",
+        "few": "Wyniki wyszukiwania",
+        "many": "Wyniki wyszukiwania"
+      },
       "results_with_count": {
         "one": "{{ count }} wynik dla \"{{ terms }}\"",
-        "other": "{{ count }} wyniki(-ów) dla \"{{ terms }}\""
+        "other": "{{ count }} wyniki(-ów) dla \"{{ terms }}\"",
+        "few": "{{ count }} wyniki(-ów) dla \"{{ terms }}\"",
+        "many": "{{ count }} wyniki(-ów) dla \"{{ terms }}\""
       }
     },
     "newsletter_form": {
@@ -137,7 +141,9 @@
       "article_with_count": {
         "one": "1 artykuł",
         "other": "{{ count }} artykuły(-ów)",
-        "zero": "0 artykułów"
+        "zero": "0 artykułów",
+        "few": "{{ count }} artykuły(-ów)",
+        "many": "{{ count }} artykuły(-ów)"
       }
     },
     "comments": {
@@ -152,7 +158,9 @@
       "unapproved": "Podany adres e-mail nie jest zatwierdzony do publikowania komentarzy.",
       "comments_with_count": {
         "one": "{{ count }} komentarz",
-        "other": "Liczba komentarzy: {{ count }}"
+        "other": "Liczba komentarzy: {{ count }}",
+        "few": "Liczba komentarzy: {{ count }}",
+        "many": "Liczba komentarzy: {{ count }}"
       }
     }
   },
@@ -190,13 +198,15 @@
     },
     "popup": {
       "added_to_cart": "Dodano już do Twojego koszyka",
-      "cart_count": {
-        "one": "{{ count }} pozycja",
-        "other": "{{ count }} pozycji(-e)"
-      },
       "product_details": "Szczegóły produktu",
       "quantity": "Ilość",
-      "quantity_label": "Ilość: {{ quantity_count }}"
+      "quantity_label": "Ilość: {{ quantity_count }}",
+      "cart_count": {
+        "one": "{{ count }} pozycja",
+        "other": "{{ count }} pozycji(-e)",
+        "few": "{{ count }} pozycji(-e)",
+        "many": "{{ count }} pozycji(-e)"
+      }
     }
   },
   "collections": {
@@ -204,11 +214,13 @@
       "view_all": "Wyświetl wszystkie",
       "view_all_label": "Wyświetl wszystkie produkty w kolekcji {{ collection_name }}",
       "no_matches": "Niestety, w tej kolekcji nie ma produktów",
+      "collection_label": "Kolekcja",
       "items_with_count": {
         "one": "Produkt: {{ count }}",
-        "other": "Liczba produktów: {{ count }}"
-      },
-      "collection_label": "Kolekcja"
+        "other": "Liczba produktów: {{ count }}",
+        "few": "Liczba produktów: {{ count }}",
+        "many": "Liczba produktów: {{ count }}"
+      }
     },
     "catalog": {
       "title": "Katalog"
@@ -359,7 +371,9 @@
       "title": "Koszyk",
       "items_count": {
         "one": "pozycję",
-        "other": "pozycje"
+        "other": "pozycje",
+        "few": "pozycje",
+        "many": "pozycje"
       }
     },
     "customer": {
