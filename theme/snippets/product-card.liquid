@@ -1,0 +1,10 @@
+<div class="col">
+  <div class="card border-light text-center h-100">
+    <img src="{{ product | img_url: '1200x1200' }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ product.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ product.price | money }}</h6>
+      <a href="{{ product.url }}" class="stretched-link" title="{{ product.title }}"></a>
+    </div>
+  </div>
+</div>
